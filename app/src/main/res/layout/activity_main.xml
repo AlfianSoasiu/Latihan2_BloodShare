@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/ic_welcome_logo" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Username"
+            android:textColor="@color/background"
+            android:textColorHint="@color/background"
+            android:backgroundTint="@color/background"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:textColor="@color/background"
+            android:textColorHint="@color/background"
+            android:backgroundTint="@color/background"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="LOGIN"
+            android:textColorHint="@color/background"
+            app:backgroundTint="@color/lightblue"
+            app:strokeColor="@color/background"
+            app:strokeWidth="@dimen/cardview_default_radius" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="CONNECT WITH FACEBOOK"
+            app:backgroundTint="#43B3E6"
+            app:icon="@drawable/ic_welcome_fb_login"
+            app:iconGravity="textStart"
+            app:iconSize="40dp"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="@dimen/cardview_default_radius" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="doesn't have account ?"
+                android:textColor="@color/background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClick"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="5dp"
+                android:text="Register"
+                android:textColor="@color/background"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

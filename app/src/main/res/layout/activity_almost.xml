@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/lightblue"
+    tools:context=".AlmostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="Almost There"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:text="Thank you for registering with us, One More"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:text="step, you need to check your email"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:text="to active your account"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="VERIFY"
+            app:backgroundTint="#43B3E6"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="@dimen/cardview_default_radius"
+            android:onClick="OnClickAlmost"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
